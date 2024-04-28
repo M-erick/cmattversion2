@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cytonnmatt</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- installed foundation css styling  -->
@@ -37,33 +38,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 
-        @media (max-width: 600px) {
-            .profile-card {
-                flex-basis: 100%;
-            }
-
-            .contact-card {
-                flex-basis: 100%;
-            }
-
-
-            .expertise-card {
-                flex-basis: 100%;
-            }
-            #Item-display{
-                flex-basis: 100%;
-            }
-            .card{
-                flex-basis: 100%;
-            }
-            .top-bar{
-                flex-basis: 100%;
-            }
-            #footer{
-                flex-basis: 100%;
-            }
-
-        }
     </style>
 </head>
 
@@ -76,43 +50,35 @@
         <!-- set background image -->
 
         <div class="profile-card"
-            style="height:100px; margin:  0 !important; box-shadow: none !important; background-image:url('cytonn-display.jpeg') !important; background-size: cover;">
-
-            <div class="top-bar " data-responsive data-toggle="top-menu" style="background-color: rgba(102,102,102,255); ">
-                <ul class="left show-for-medium"  style="list-style-type: none; background-color: transparent; padding-left: 70px;  padding-top:0px;">
-                    <!-- <li><a href="#">Cytonn<span>.</span></a></li> -->
-                    <img src="images/Cymatt2.png" alt="" width="100px" height="50px" style=" margin-right:50px;">
-                </ul>
-                <ul class="right"
-                    style="list-style-type: none; display: flex;  justify-content:space-around; gap: 10px; background-color: transparent;  ">
-                    <li ><a href="#">Tiles</a></li>
-                    <li ><a href="#Skills">Sanitary</a></li>
-                    <li ><a href="#Electrical fittings">Electrical fittings</a></li>
-                    <li ><a href="#Light Fittings">Light Fittings</a></li>
-                    <li ><a href="#Iron Fitting">Iron Fitting</a></li>
-                    <li ><a href="#Doors">Doors</a></li>
-                    <li ><a href="#Kitchen">Kitchen</a></li>
-                    <li ><a href="#contact">|</a></li>
-                    <li ><a href="#Services">Services</a></li>
-                    <li ><a href="#About Us">About Us</a></li>
-                    <li ><a href="#Contact Us">Contact Us</a></li>
-                    <li style="margin-right: 70px;">
-                        <a href="#" id="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <input type="search" id="search-input" style="background-color: transparent; border: none; display: none; color:white" value=" Search product">
-                      </li>
-                      
-
-
-                </ul>
-            </div>
-            <!-- <button class="menu-icon" type="button" data-toggle></button> </div> -->
-
-
+        style="height:100px; margin:  0 !important; box-shadow: none !important; background-image:url('cytonn-display.jpeg') !important; background-size: cover;">
+      
+        <div class="top-bar " data-responsive data-toggle="top-menu" style="background-color: rgba(102,102,102,255); ">
+          <ul class="left show-for-medium"  style="list-style-type: none; background-color: transparent; padding-left: 70px;  padding-top:0px;">
+            <img src="images/Cymatt2.png" alt="" width="100px" height="50px" style=" margin-right:50px; margin-bottom: 20px;">
+          </ul>
+          <ul class="right"
+            style="list-style-type: none; display: flex;  justify-content:space-around; gap: 10px; background-color: transparent;  ">
+            <li ><a href="#">Tiles</a></li>
+            <li ><a href="#Skills">Sanitary</a></li>
+            <li ><a href="#Electrical fittings">Electrical fittings</a></li>
+            <li ><a href="#Light Fittings">Light Fittings</a></li>
+            <li ><a href="#Iron Fitting">Iron Fitting</a></li>
+            <li ><a href="#Doors">Doors</a></li>
+            <li ><a href="#Kitchen">Kitchen</a></li>
+            <li ><a href="#contact">|</a></li>
+            <li ><a href="#Services">Services</a></li>
+            <li ><a href="#About Us">About Us</a></li>
+            <li ><a href="#Contact Us">Contact Us</a></li>
+            <li style="margin-right: 70px;">
+              <a href="#" id="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input type="search" id="search-input" style="background-color: transparent; border: none; display: none; color:white" value=" Search product">
+            </li>
+          </ul>
         </div>
         <!-- Make this responsive -->
         <!-- breadcrumbs -->
         <section style=" padding:0 70px;">
-            <div style="padding-left: 50px; padding-bottom: 0 !important; padding-top: 50px;">
+            <div class="hamburger">
                 <nav aria-label="You are here:" role="navigation">
                     <ul class="" style="display:flex;justify-content:left;list-style-type:none; gap:5px;color:#9c9898">
                         <li>Home <i style="padding-right: 3px;"class="fa fa-chevron-right" aria-hidden="true"></i></li>
@@ -176,7 +142,7 @@
                             
                             you please provide me with more information? |
                         </p>
-                        <p style=" color:white;text-align: center; border-radius: 2px; background-color:rgba(222,147,8,255); padding: 15px;">
+                        <p style=" color:white;text-align: center; border-radius: 2px; background-color:rgba(249,147,0,255); padding: 15px;">
                             Contact Us
 
                         </p>
@@ -185,7 +151,7 @@
 
                         <!-- Change  font color of this part -->
                         <p style="color: #b5b0b0; font-weight: bold; font-family: Lato;"> Or call Cymatt : <span
-                                style="color:rgba(222,147,8,255); line-height: 0.5;">(254) 800-304 </span></p>
+                                style="color:rgba(249,147,0,255); line-height: 0.5;">(254) 800-304 </span></p>
 
                         <hr style="color: #ffffff;">
 
@@ -227,18 +193,18 @@
 
 
         <!-- Expertise -->
-        <section id="Expertise" style="padding: 0 70px ;">
-            <h5 class="text-left" style=" padding-top: 30px ; padding-left: 30px;">MORE PRODUCTS LIKE THIS</h5>
+        <section id="Expertise" style="padding: 0 75px ;">
+            <h5 class="text-left" style=" padding-top: 30px ; padding-left: 34px;">MORE PRODUCTS LIKE THIS</h5>
             <div class="card-container" style=" margin-top:0 !important;">
                 <!-- Skill cards -->
 
-                <div class="expertise-card" style="padding-left: 10px !important;">
+                <div class="expertise-card" style="">
                     <div class="expertise-info">
                         <!-- add favicon here :google -->
                         <a href="#">
                         <img src="images/phillip.png" style="padding-bottom: 20px;" alt="">
                         </a>
-                        <p style="line-height: 0.5;">Schneider Electric Bell</p>
+                        <p style="">Schneider Electric Bell</p>
                         <p style="color: #d4cece; line-height: 0.5;">Electric Fittings </p>
 
                     </div>
@@ -280,9 +246,10 @@
                     </div>
                 </div>
             </div>
+        </section>
+
     </div>
 
-    </section>
     <!-- contact  -->
     <section id="contact">
 
@@ -300,7 +267,7 @@
 
 
 
-                    <div style="padding-right:80px ;">
+                    <div  id= "inputs" style="padding-right:80px ;">
 
                      
                         <input type="text" placeholder="Your  email" style="border:1px solid white; height: 60px; width: 300px; background-color:transparent;color: white; margin-bottom: 0 !important;">                        
@@ -344,7 +311,7 @@
                                     style="background-color: rgba(235,235,235,255); border: none !important;border-color: #d4cece !important;">
                                     <h5 style=" line-height: 1.5; font-weight: bold;  padding-bottom: 20px;">Cymatt</h5>
                                     <p style="color: #9c9898;line-height: 0.5;">About</p>
-                                    <p style="color: #9c9898;line-height: 0.5;">Services & Facilities</p>
+                                    <p style="color: #9c9898;">Services & Facilities</p>
 
                                 </div>
                             </div>
@@ -369,7 +336,7 @@
                                 <div class="card-section"
                                     style="background-color: rgba(235,235,235,255); border: none !important;border-color: #d4cece !important;">
                                     <h5 style=" line-height: 1.5; font-weight: bold;  padding-bottom: 20px;">Get Help</h5>
-                                    <p style="color: #9c9898;line-height: 0.5;">Contact Us</p>
+                                    <p style="color: #9c9898;">Contact Us</p>
                                     <p style="color: #9c9898;line-height: 0.5;">FAQ</p>
 
 
@@ -383,7 +350,7 @@
                                     style="background-color: rgba(235,235,235,255); border: none !important;border-color: #d4cece !important;">
                                     <h5 style=" line-height: 1.5; font-weight: bold;  padding-bottom: 20px;">For your home</h5>
                                     <p style="color: #9c9898;line-height: 0.5;">Kitchen</p>
-                                    <p style="color: #9c9898;line-height: 0.5;">Living room</p>
+                                    <p style="color: #9c9898;">Living room</p>
                                     <p style="color: #9c9898;line-height: 0.5;">Outdoor</p>
 
 
@@ -398,7 +365,7 @@
                                 <div class="card-section"
                                     style="background-color: rgba(235,235,235,255); border: none !important;border-color: #d4cece !important;">
                                     <h5 style=" line-height: 1.5; font-weight: bold;  padding-bottom: 20px;">Accounts</h5>
-                                    <p style="color: #9c9898;line-height: 0.5;font-weight: bold;">Account Sign-in</p>
+                                    <p style="color: #9c9898;font-weight: bold;">Account Sign-in</p>
                                     <p style="color: #9c9898;line-height: 0.5;">Store</p>
 
 
@@ -415,7 +382,7 @@
                 </div>
 
                 <div style="padding-left: 50px;min-width:400px ;">
-                    <p style="color: black;font-weight: bold;"> Sign up for newsletter</p>
+                    <p style="color: black;font-weight: bold; padding-top: 20px;"> Sign up for newsletter</p>
                     <div class="input-group">
                         <input class="input-group-field" type="email">
                         <div class="input-group-button">
@@ -441,18 +408,18 @@
 
 
             </div>
-            <div style="display: flex; align-items: center;">
-                <p style="flex-grow: 1; color:#9c9898; font-weight: bold; "><i class="fa-solid fa-flag-usa"></i> <span
-                        style="padding-left:5px ; "> United States</span></p>
+            <div id="CountyUS" style="display: flex; align-items: center; padding-left: 15px;">
+                <p style=" flex-grow: 1; color:#9c9898; font-weight: bold; "><i class="fa-solid fa-flag-usa"></i> <span
+                        style=""> United States</span></p>
                 <p style="color:#656363; "><i class="fa-regular fa-copyright"
-                        style="padding-right: 2px; padding-left: 830px;  "></i>2018 Cymatt Limited</p>
+                        style="padding-right: 2px; padding-left: 800px; "></i>2018 Cymatt Limited</p>
             </div>
 
 
 
         </div>
         <div style="font-weight: bold;">
-            <p style="text-align: center; padding-top: 15px  ; padding-bottom: 15px ;">Privacy <span
+            <p style="text-align: center; padding-top: 15px  ; padding-bottom: 45px ;">Privacy <span
                     style="padding-left: 10px;"> Terms</span>
                 <span style="padding-left: 10px;"> Accessibility </span>
                 <span style="padding-left: 10px;"> Legal </span>
