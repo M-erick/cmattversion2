@@ -2,6 +2,7 @@ const searchToggle = document.getElementById("search-toggle");
 const searchInput = document.getElementById("search-input");
 const dd = document.getElementById('dd');
 const topBar = document.querySelectorAll('.top-bar');
+const profileImage = document.querySelectorAll('.profile-card-info img');
 
 searchToggle.addEventListener("click", function() {
   searchInput.style.display = searchInput.style.display === "none" ? "block" : "none";
@@ -23,6 +24,15 @@ sizeOptions.forEach(option => {
 
 //updates
 const cardOptions = document.querySelectorAll('.card-option');
+
+
+
+cardOptions.forEach((cardOption, index) => {
+  cardOption.addEventListener('click', async() => {
+    const profileImage = document.getElementById('profileImage');
+    profileImage.src = cardOption.src;
+  });
+});
 
 cardOptions.forEach(option => {
   option.addEventListener('click', () => {
