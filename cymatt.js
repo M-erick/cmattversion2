@@ -21,7 +21,7 @@ sizeOptions.forEach(option => {
   });
 });
 
-
+//updates
 const cardOptions = document.querySelectorAll('.card-option');
 
 cardOptions.forEach(option => {
